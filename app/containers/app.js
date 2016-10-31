@@ -86,6 +86,7 @@ const store = createStore(consolidatedReducers);
 
 export default class App extends Component {
   render() {
+        console.log('Finally Store', store.getState());
     return (
       <Provider store={store}>
         <CounterApp />

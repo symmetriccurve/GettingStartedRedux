@@ -3,10 +3,8 @@ import * as types from '../actions/actionTypes';
 const initialState = {
   count: 0
 };
-
+/* Every reducer should have it's initial State*/
 export default function Reducer1(state = initialState, action = {}) {
-   //console.log('State from Counter============',state);
-   //console.log('action from Counter============',action);
   switch (action.type) {
     case types.INCREMENT:
       return {
